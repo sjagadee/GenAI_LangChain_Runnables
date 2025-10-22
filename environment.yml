@@ -1,0 +1,43 @@
+name: for_genai
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - streamlit
+  - pydantic
+  - email-validator
+
+# Generative AI Frameworks
+  - langchain
+  - langchain-core
+
+# OpenAI Integration
+  - langchain-openai
+  - openai
+
+# Anthropic Integration
+  - langchain-anthropic
+
+# Google Generative AI Integration
+  - langchain-google-genai
+  - google-generativeai
+
+# Hugging Face Integration
+  - langchain-huggingface
+  - transformers
+  - pip:
+    - huggingface-hub
+
+# Environment Variable Management
+  - python-dotenv
+
+# Machine Learning Utilities
+  - numpy
+  - scikit-learn
+
+
+# conda env create -f environment.yml
+# conda env update -f environment.yml
+# conda env remove --name <environment_name>
