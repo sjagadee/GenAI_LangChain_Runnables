@@ -8,6 +8,8 @@ dependencies:
   - streamlit
   - pydantic
   - email-validator
+  - jupyter
+  - ipykernel
 
 # Generative AI Frameworks
   - langchain
@@ -37,7 +39,13 @@ dependencies:
   - numpy
   - scikit-learn
 
-
+# to set up the environment
 # conda env create -f environment.yml
 # conda env update -f environment.yml
 # conda env remove --name <environment_name>
+
+# to activate the environment
+# conda activate for_genai
+
+# to deactivate the environment
+# conda deactivate
