@@ -19,6 +19,6 @@ topic = input("Enter a topic: ")
 formatted_prompt = prompt.format(topic=topic)
 
 # generate a response directly from llm
-response = llm.invoke(formatted_prompt)
+response = llm.predict(formatted_prompt)
 
 print("Generated title for ", topic," is ", response)

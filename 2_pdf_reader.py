@@ -31,6 +31,6 @@ llm = OpenAI(model="gpt-3.5-turbo-instruct", temperature=0.9)
 
 # generate a response
 prompt = f'Based on the following document, {retrieved_docs}, answer the following question: {query}'
-response = llm.invoke(prompt)
+response = llm.predict(prompt)
 
 print(response)
